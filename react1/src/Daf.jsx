@@ -225,7 +225,7 @@ export default function Daf() {
         )}
         
       </div>
-      <TopCop/>
+      
     </div>
   )
 }
