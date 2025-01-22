@@ -134,7 +134,7 @@ export default function Daf() {
   return (
      <div className="active-login-container">
       <div className="login">
-        <h1>{isSignup ? "회원가입" : "로그인"}</h1>
+        <h1>{isSignup ? "회원가입" : "로그인(찬범)"}</h1>
         {isSignup ? (
           <form className="form1" onSubmit={handleSignupSubmit}>
             <input
@@ -225,7 +225,7 @@ export default function Daf() {
         )}
         
       </div>
-      <TopCop/>
+      
     </div>
   )
 }
