@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.Loginpj.mapper.UserMapper">
+	<resultMap id="UserResultMap" type="com.example.Loginpj.model.User">
+    	<result property="username" column="id"/>
+    	<result property="password" column="passwd"/>
+    	<result property="email" column="email"/>
+	</resultMap>
+    <select id="findById" resultMap="UserResultMap">
+		SELECT id, passwd, email FROM user_info WHERE id = #{username}    
+	</select>
+	
+    <insert id="insertUser" parameterType="com.example.Loginpj.model.User">
+        INSERT INTO user_info (id, passwd, email)
+        VALUES (#{username}, #{password}, #{email})
+    </insert>
+
+</mapper>
