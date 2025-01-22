@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-
+import TopCop from './top/TopCop';
 
 
 export default function Daf() {
@@ -220,10 +220,12 @@ export default function Daf() {
             >
               회원가입
             </button>
+            
           </form>
         )}
         
       </div>
+      <TopCop/>
     </div>
   )
 }
