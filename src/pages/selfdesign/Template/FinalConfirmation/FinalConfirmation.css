@@ -1,0 +1,14 @@
+.layout {
+    display: flex; /* 가로 정렬 */
+    width: 100%;
+  }
+
+.layout .Sidebar {
+    margin-right: auto;
+}
+
+.layout .Content {
+    margin-right: 30px;
+    margin-top: 35px;
+    margin-bottom: 33px;
+}

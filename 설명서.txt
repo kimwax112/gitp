@@ -1,0 +1,19 @@
+src/
+  assets/          # 이미지, 폰트, 아이콘 등 정적 파일
+  components/      # 재사용 가능한 일반 컴포넌트
+  pages/           # 라우트(페이지) 단위 컴포넌트
+  hooks/           # 커스텀 훅
+  utils/           # 공통 함수, 헬퍼, 상수
+  services/        # API 호출 함수, axios 설정 등
+  App.js
+  index.js
+
+components: 자주 재사용되는 컴포넌트를 여기로 이동
+pages: 라우트(페이지)별 최상위 컴포넌트. 예) Login.jsx, Dashboard.jsx 등
+hooks: useXXX 형태의 커스텀 훅들
+utils: 공통 함수(날짜 처리, 문자열 처리 등)
+services: API 요청이나 axios 설정 등 외부 연동 로직
+
+각 폴더의 최상위 폴더마다 export 를 관리하는 index.js 존재함
+검색 컴포넌트 ui를 가져오고 싶다면 ../경로를 찾아 components 폴더로 import해주면됨 (import { 컴포넌트명 } from ../components)
+만약에 컴포넌트 ui를 만들었다면 src/components/index.js에서 export해주면 됨  (export { default 컴포넌트명} from 경로 해주면됨)

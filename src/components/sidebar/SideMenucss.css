@@ -1,0 +1,99 @@
+.sidestyle {
+    width: 250px; /* width 값을 한 번만 설정 */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px; /* 모서리 둥글게 */
+    margin: 15px;
+}
+
+.SideSearchStack {
+    width: 250px; /* 부모 div의 width에 맞춰 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span{
+    margin-bottom: 20px;
+}
+
+.ExSearchCon {
+    width: 230px; /* 부모와 비슷하게 맞추기 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* input 요소의 가로 길이 조정 */
+.ExSearchCon input[type="text"] {
+    width: 230px; /* 부모와 비슷하게 맞추기 */
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.InputDiv{ 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 5px;
+    gap: 10px; 
+}
+
+.MenuBar2 {
+    width: 250px; /* 부모와 동일하게 맞추기 */
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+
+.MenuBar2 > nav > ul > li{
+    /*background-color: red;*/
+    list-style: none;
+    justify-content: center;
+    line-height: 60px;
+    /*text-align:center;*/
+    padding-left: 5px;
+}
+/*.MenuBar > nav > ul > li:not(:last-child) {
+    border-right: 2px solid white;
+}*/
+.MenuBar2 > nav > ul > li {
+    border-bottom: 2px solid #799FC4;
+}
+.MenuBar2 > nav > ul > li:first-child {
+    border-top: 2px solid #799FC4
+}
+.MenuBar2 > nav > ul > li > a{
+    width: 233px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight:bold;
+}
+
+/*아래는 드롭다운관련*/
+.MenuBar2 > nav > ul > li:hover .SubMenuDrop {
+    max-height: 300px; 
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.SubMenuDrop {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    visibility: hidden;
+    max-height: 0;  
+    overflow: hidden; 
+    transition: max-height 0.3s ease-in-out;
+}
+
+.SideSearchWrapper {
+    width: 250px; /* 부모와 동일하게 맞추기 */
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}

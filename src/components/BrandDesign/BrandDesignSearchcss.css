@@ -1,0 +1,74 @@
+.DesignPreview{
+    width:700px;
+    height:380px;
+    border: solid 1px black;
+    border-radius: 50px;
+    display:flex;
+    padding:20px;
+    justify-content: left;
+    margin-top:20px;
+
+}
+.RightPart{
+    width:430px;
+    height:320px;
+    border-radius: 50px;
+    margin-left:10px;
+
+}
+.LeftPart{
+    width:250px;
+    height:320px;
+    border-radius: 50px;
+    margin-left:10px;
+
+}
+
+.Lefttop{
+    width:250px;
+    height:250px;
+    border: solid 1px #EBE5E5;
+    background-color:#F6F2F2;
+    border-radius: 20px;
+
+}
+.Rightbottom{
+    margin-top:10px;
+    display:flex;
+
+
+}
+.Rightbottomcontents{
+    display : flex;
+    align-items: center;
+    justify-content : center;
+    color:white;
+    width:75px;
+    height:30px;
+    margin:5px;
+    border-radius: 20px;
+    background-color: #BFD7EE;
+
+}
+.Leftbottom{
+    margin-top:10px;
+
+}
+.Profile{
+    border: solid 1px black;
+    width:25px;
+    height:25px;
+    border-radius: 100px;
+    margin-right:10px;
+
+}
+.Leftbottomcontents{
+    display : flex;
+    align-items: center;
+
+    width:150px;
+    height:30px;
+    margin:5px;
+    border-radius: 20px;
+
+}

@@ -1,0 +1,136 @@
+/* Carousel 컨테이너 크기 수정 */
+.carousel2-container {
+    position: relative;
+    width: 100%;
+    max-width: 2024px; /* 특정 크기 이하로 줄어들지 않도록 설정 */
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* 슬라이드 항목 중앙 정렬 및 이미지 크기 조정 */
+.carousel2-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column; /* 위(글씨) → 아래(이미지) 순서 */
+    align-items: center; /* 중앙 정렬 */
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.carousel2-item img {
+    width: 80%;  /* 이미지 크기 비율 조정 */
+    max-width: 500px; /* 이미지 크기 최대값 설정 */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* 이미지 모서리 둥글게 */
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* 콘텐츠 스타일 */
+.carousel2-content {
+    position: relative;
+    width: 80%; /* 전체 배너 크기 조정 */
+    margin: 0 auto;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.carousel2-content h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    display: flex;
+}
+
+.description2 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px; /* 부설명과 제목 사이의 간격 조정 */
+    margin-bottom: 20px;
+    text-align: left; /* 왼쪽 정렬 */
+    width: 100%; /* 부모 요소의 너비에 맞게 */
+}
+
+.carousel2-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 더보기 버튼 스타일 */
+.carousel2-button {
+    display: inline-block;
+    background-color: #a0c4e3;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px; /* 버튼 위쪽 여백 조정 */
+}
+
+.carousel2-button:hover {
+    background-color: #799fc4;
+}
+
+/* 점(dots) 스타일 */
+.dots-container {
+    position: absolute;
+    bottom: 10px; /* 점이 이미지 바로 아래에 위치하도록 조정 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 12px;  /* 점 크기 약간 키움 */
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: rgb(173, 172, 172);
+}
+
+/* 네비게이션 버튼 스타일 */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(230, 230, 230);
+    border: none;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
