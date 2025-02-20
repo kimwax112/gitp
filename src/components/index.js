@@ -10,3 +10,4 @@ export { default as Footer} from './Footer/Footer';
 export { default as Header } from './Header/Header';
 export { default as Tabs} from './Tabs/Tabs';
 export { default as ItemsContainer} from './ItemsContainer/ItemsContainer';
+export { default as BreadCrumb} from './BreadCrumb/BreadCrumb';

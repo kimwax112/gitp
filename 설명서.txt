@@ -11,9 +11,18 @@ src/
 components: 자주 재사용되는 컴포넌트를 여기로 이동
 pages: 라우트(페이지)별 최상위 컴포넌트. 예) Login.jsx, Dashboard.jsx 등
 hooks: useXXX 형태의 커스텀 훅들
-utils: 공통 함수(날짜 처리, 문자열 처리 등)
+utils: 공통 함수(날짜 처리, 문자열 처리, 팝업버튼, 아이템선택기능(선택이 안되면 실행이 되지않는 기능) 등)
 services: API 요청이나 axios 설정 등 외부 연동 로직
 
 각 폴더의 최상위 폴더마다 export 를 관리하는 index.js 존재함
 검색 컴포넌트 ui를 가져오고 싶다면 ../경로를 찾아 components 폴더로 import해주면됨 (import { 컴포넌트명 } from ../components)
 만약에 컴포넌트 ui를 만들었다면 src/components/index.js에서 export해주면 됨  (export { default 컴포넌트명} from 경로 해주면됨)
+
+2/20: 
+1.App.js 를 전역으로 관리한느 파일로 바꾸고 라우팅 관리하는 파일을 만듬(Routercomponent.js), 
+이거떄문에 의뢰인,디자이너 선택하는 ui에서는 Header와,Footer가 있으면 안되는데 생겨버리는 문제가 발생했음
+
+2.pages 파일 안에 selfdesign(직접디자인하기) 안에 파일들을 최대한 컴포넌트 형식으로 조정했음(아직 다못함)
+
+3.utils 파일안에 PopupButton 이 버튼 ui 랑 onClick 기능을 따로둬서 다음 버튼을 재사용할수있게 하고싶음
+

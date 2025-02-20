@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "./Fabric.css"; // CSS 파일 경로가 정확한지 확인 필요
 import FabricItem from "./FabricItem";
 import styled from "styled-components";
-import {Sidebar} from '../../../../components';
-import BreadCrumb from "../../../../BreadCrumb/BreadCrumb";
+import {Sidebar,BreadCrumb} from '../../../../components';
+
 
 
 const NextButton = styled.button`

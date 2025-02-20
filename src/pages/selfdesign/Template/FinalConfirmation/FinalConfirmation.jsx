@@ -1,8 +1,8 @@
 import React from "react"; 
 import "./FinalConfirmation.css";
 import "../../../CosMain/CosMainCss.css"
-import { Sidebar,Menubar,Content } from '../../../../components'
-import BreadCrumb from "../../../../BreadCrumb/BreadCrumb";
+import { Sidebar,Content,BreadCrumb } from '../../../../components'
+
 
 
 const FinalConfirmation = () => {

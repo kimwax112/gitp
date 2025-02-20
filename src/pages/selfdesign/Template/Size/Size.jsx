@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../Fabric/Fabric.css";
 import Sizespec from "./Sizespec";
 import Sizespecbutton from "./Sizespecbutton";
-import { Sidebar } from "../../../../components";
-import BreadCrumb from "../../../../BreadCrumb/BreadCrumb";
+import { Sidebar,BreadCrumb } from "../../../../components";
 
 const Size = () => {
   // selectedSize state 추가

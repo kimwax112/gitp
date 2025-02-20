@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "./Clothes.css";
 import {useNavigate} from "react-router-dom";
-import Fabric from '../Fabric/Fabric';
-import { Navbar,Sidebar,Tabs,ItemsContainer} from '../../../../components'
+import { Sidebar,Tabs,ItemsContainer,BreadCrumb} from '../../../../components'
 import { PopupComponent} from '../../../../utils';
-import BreadCrumb from "../../../../BreadCrumb/BreadCrumb";
+
 
 
 
