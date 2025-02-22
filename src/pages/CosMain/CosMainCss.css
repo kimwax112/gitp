@@ -77,11 +77,13 @@
     font-size: 14px;
     font-weight: bold;
 }
+
 .shortcutimage{
     width: 100%;  /* 가로 너비를 100%로 설정 */
     height: 100%;  /* 세로 높이를 100%로 설정 */
     object-fit: cover; /* 이미지를 잘라서 가득 채우도록 설정 */
 }
+
 .ImageSell{
     width:2000px;
     height:700px;

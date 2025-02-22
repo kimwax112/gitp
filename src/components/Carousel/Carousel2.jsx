@@ -9,7 +9,7 @@ const Carousel2 = () => {
     {
       title: '최신 디자인 보러가기:브랜드 검색',
       description: '브랜드 디자인으로 검색하여 만들어낸 최신 디자인! 다양한 스타일을 확인해보세요!',
-      link: '/designer-portfolio',
+      link: '/BrandDP',
       image: 'image/banner2-brandsearchdesign.png', 
       designTitle: '(제목)청바지 디자인 ㆍ 2025.02.11',
       backgroundColor: '#E0F6FF',
@@ -17,7 +17,7 @@ const Carousel2 = () => {
     {
       title: '최신 디자인 보러가기:디자인 파일 업로드',
       description: '디자인 파일을 업로드하여 만들어낸 최신 디자인을 확인해보세요!',
-      link: '/clothing-order',
+      link: '/file-upload',
       image: 'image/banner2-fileuploaddesign.png',
       designTitle: '(제목)원피스 디자인했던거 ㆍ 2025.02.11',
       backgroundColor: '#DAFFF1', 
@@ -25,7 +25,7 @@ const Carousel2 = () => {
     {
       title: '최신 디자인 보러가기:템플릿으로 디자인',
       description: '기본 템플릿을 이용해 만들어낸 최신 디자인을 살펴보세요!',
-      link: '/customer-support',
+      link: '/clothes',
       image: 'image/banner2-templatedesign.png',
       designTitle: '(제목)살랑 원피스 디자인들 ㆍ 2025.02.11',
       backgroundColor: '#F3E7FF', 

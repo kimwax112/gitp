@@ -6,14 +6,6 @@ import { Sidebar,Tabs,ItemsContainer,BreadCrumb} from '../../../../components'
 import { PopupComponent} from '../../../../utils';
 
 
-
-
-
-
-
-
-
-
 // const PopupOverlay = styled.div`
 //   position: fixed;
 //   top: 0;

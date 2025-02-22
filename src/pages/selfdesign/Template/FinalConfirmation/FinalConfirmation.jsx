@@ -3,8 +3,6 @@ import "./FinalConfirmation.css";
 import "../../../CosMain/CosMainCss.css"
 import { Sidebar,Content,BreadCrumb } from '../../../../components'
 
-
-
 const FinalConfirmation = () => {
   
     return (
@@ -13,6 +11,7 @@ const FinalConfirmation = () => {
           <aside className="sidebar">
           <Sidebar activePage={4}/>
           </aside>
+          
           <div className="content1">
             <BreadCrumb activePage={4} />
           <h3>사이트 제공 템플릿으로 디자인</h3>

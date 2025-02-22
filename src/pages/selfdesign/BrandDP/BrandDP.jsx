@@ -8,26 +8,6 @@ export default function BrandDP() {
   return (
     <div>
          <div className='WholeWrapper'>
-            <div className='LogoStuff'>
-                <img src="image/image.png" alt="이미지없음"></img>
-                <div className='Buttons1' style={{marginLeft:'auto'}}>
-                Sample 님, 환영합니다!
-                <button className='ButtonAtLogo' style={{backgroundColor:'#2C2F31'}}>로그아웃</button>
-                <button className='ButtonAtLogo' style={{backgroundColor:'#4A6171'}}>고객센터</button>
-                </div>
-            </div>
-            <header className="header">
-                <h1>중개 플랫폼</h1>
-                <nav className="nav-links">
-                    <a href="#">직접 의류 디자인</a>
-                    <a href="#">의뢰서 작성</a>
-                    <a href="#">제작 의뢰 맡기기</a>
-                    <a href="#">대화방</a>
-                    <a href="#">계약 관리</a>
-                    <a href="#">의뢰 관리</a>
-                    <button>시작하기</button>
-                </nav>
-            </header>
 
             {/*타이틀 제목*/}
             <div className='ContentsWrapper'>
