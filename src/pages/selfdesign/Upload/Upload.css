@@ -1,0 +1,220 @@
+/* Container */
+.Container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* InputWrapper */
+.InputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Title */
+.Title {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  position: relative;
+  left: -15%;
+  font-size: 24px;
+  line-height: 5;
+}
+
+.title2 {
+  white-space: nowrap;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title2input {
+  flex-grow: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+/* 기본 스타일 초기화 */
+
+
+/* UploadpageWrapper : 반응형 정렬 */
+.UploadpageWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 30px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  text-align: center;
+  height: auto;
+}
+
+
+
+
+/* FileContainer : 고정 높이(예: 60vh)와 스크롤바 적용 */
+.FileContainer {
+  width: 100%;
+  max-width: 100%;
+  height: 60vh;  /* 화면 높이의 60%로 지정 (필요에 따라 조절) */
+  margin-top: 10px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 1000px;
+}
+
+/* FileUpload 제목 */
+.FileUpload h3 {
+  margin: 0;
+  padding-left: 10px;
+  text-align: left;
+  align-self: flex-start;
+  font-size: 18px;
+}
+
+/* FileBoxWrapper */
+.FileBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+/* FileBox : 내부 요소가 부모 너비에 맞춰 정렬 */
+.FileBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+  gap: 10px;
+  padding-bottom: 20px;
+  flex-wrap: nowrap;
+}
+
+/* 파일명 Wrapper */
+.fileNameWrapper {
+  flex-grow: 1;
+  min-width: 400px;
+  padding: 5px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: 2px solid gray;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 버튼 그룹 */
+.ButtonGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.deleteButton, .uploadButton {
+  padding: 5px 10px;
+  border: none;
+  background-color: #799FC4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+/* ButtonContainer : 오른쪽 하단에 위치 */
+.ButtonContainer {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.resetButton, .saveButton {
+  padding: 8px 16px;
+  border: none;
+  background-color: #799FC4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* createFile : 하단 중앙에 위치 */
+.createFile {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.createButton {
+  padding: 8px 16px;
+  border: none;
+  background-color: #6a8caf;
+  color: white;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Edit 컴포넌트 관련 스타일 */
+.EditWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.EditText {
+  cursor: pointer;
+  color: rgb(21, 21, 21);
+  font-weight: bold;
+}
+
+.EditBox {
+  width: 400px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.previewImage {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.closeButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #799FC4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

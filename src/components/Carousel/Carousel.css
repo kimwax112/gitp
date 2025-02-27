@@ -1,0 +1,128 @@
+/* src/Carousel.css */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    min-width: 1024px; /* 특정 크기 이하로 줄어들지 않도록 설정** */
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* 부드러운 전환 애니메이션 */
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out; /* 전환 시 부드럽게 이동 */
+}
+
+.carousel-item img {
+    width: 25%; /* 원하는 크기로 조정*/
+    height: auto;
+    object-fit: cover;   /* 비율 유지하며 잘리도록 설정 */
+    position: absolute;
+    right: 10%; /* 오른쪽 정렬 */
+    margin-right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+  }  
+
+.carousel-content {
+    position: absolute;
+    top: 50%;  /* 세로로 중앙 정렬 */
+    left: 0;   /* 왼쪽 정렬 */
+    transform: translateY(-50%);  /* 정확한 중앙 위치를 맞추기 위해 */
+    padding: 20px;
+    color: #333333;
+    width: 40%;  /* 콘텐츠 영역의 크기, 필요에 따라 조정 */
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.carousel-content h3 {
+    font-size: 40px;  /* 제목 글씨 크기 */
+    font-weight: bold;  /* 글씨 두껍게 */
+    margin-bottom: 10px;  /* 제목과 본문 간격 */
+  }
+  
+  .carousel-content p {
+    font-size: 16px;  /* 설명 글씨 크기 */
+    line-height: 1.5;  /* 줄 간격 */
+    margin-bottom: 20px;  /* 설명과 버튼 간격 */
+  }
+
+.carousel-button {  /*자세히보기 버튼*/
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9dbbd5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.carousel-button:hover {
+    background-color: #799fc4;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);  /* 중앙 정렬 */
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: rgb(173, 172, 172);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);  /* 배경색 */
+    color: rgb(230, 230, 230);
+    border: none;
+    font-size: 25px;  /* 화살표 아이콘 크기 */
+    width: 50px;  /* 버튼의 너비 */
+    height: 50px;  /* 버튼의 높이 */
+    cursor: pointer;
+    border-radius: 50%;  /* 완전 원형 */
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* 화살표 아이콘이 가운데 정렬 */
+    z-index: 1;  /* 이미지 위에 올라가도록 */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}

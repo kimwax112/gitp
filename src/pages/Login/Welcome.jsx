@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-import TopCop from './top/TopCop';
 
+import './Welcomecss.css';
+export default function Welcome() {
+  const navigate = useNavigate();
 
-export default function Daf() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
@@ -15,7 +16,6 @@ export default function Daf() {
   const [usernameCheckMessage, setUsernameCheckMessage] = useState("");
   const [email, setEmail] = useState("");
 
-  const navigate = useNavigate();
 
 
   const handleLoginSubmit = async (e) => {
@@ -46,7 +46,9 @@ export default function Daf() {
     console.log(data);
     localStorage.setItem("username", data.username);
     setMessage("로그인 성공!");
-    navigate('/welcome');
+    setTimeout(() => {
+      navigate('/CosMain');  // 회원가입 성공 시 Hello 컴포넌트로 이동
+    }, 1000);
 
     
     };
@@ -130,102 +132,58 @@ export default function Daf() {
       }
     }
   };
-
   return (
-     <div className="active-login-container">
-      <div className="login">
-        <h1>{isSignup ? "회원가입" : "로그인(수정)"}</h1>
-        {isSignup ? (
-          <form className="form1" onSubmit={handleSignupSubmit}>
-            <input
-              type="text"
-              className={`input-text ${!isUsernameValid ? "invalid" : ""}`}
-              placeholder="아이디 입력"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            {/*<button
-              type="button"
-              className="dupcheck"
-              onClick={handleCheckUsername}
-            >
-              중복 확인
-            </button>*/}
-            <span>{usernameCheckMessage}</span>
-            <br />
-          
-            <input
-              type="password"
-              className="input-password"
-              placeholder="비밀번호 입력"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <br />
-            <input
-              type="password"
-              className="input-password"
-              placeholder="비밀번호 확인"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-            />
-            <br />
-            <input
-              type="email"
-              className="input-email"
-              placeholder="이메일 입력"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <br />
-            {message && <p style={{ color: "red" }}>{message}</p>}
-            <button type="submit" className="mpbutton">
-              회원가입
-            </button>
-            <button
-              type="button"
-              className="mpbutton"
-              onClick={handleGoToLogin}
-            >
-              돌아가기
-            </button>
-          </form>
-        ) : (
-          <form className="form1" onSubmit={handleLoginSubmit}>
-            <input
-              type="text"
-              className="input-text"
-              placeholder="Username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <br />
-            <input
-              type="password"
-              className="input-password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <br />
-            <p>성공여부:{message}</p>
-            <button type="submit" className="mpbutton">
-              로그인
-            </button>
-            <button
-              type="button"
-              className="mpbutton"
-              onClick={handleGoToSignup}
-              
-            >
-              회원가입
-            </button>
-            
-          </form>
-        )}
-        
-      </div>
+    <div>
       
-    </div>
+      <div className='divmcover'>
+        <div className='loginWrapper'>
+        <div className='divm-wrapperr'>
+          <div className='divmm'>
+            <p style={{textAlign:'center', fontSize:'50px'}}>
+            Login
+            </p>
+            <form className="form1" onSubmit={handleLoginSubmit}>
+
+            <input  value={username} className="loginput" type="text" onChange={(e) => setUsername(e.target.value)}></input>
+            <br/>
+            <input value={password} className="loginput" type="text" onChange={(e) => setPassword(e.target.value)}></input>
+            <br/>
+            <div style={{textAlign:'left'}}>
+            <input type="checkbox"></input>아이디 저장
+            </div>
+            
+            <br/>
+            <button type='submit' style = {{marginTop:'10px'}}className='mainbaroo'>Sign in</button>
+            </form>
+            <div className='MenuBarr'> 
+                <nav>
+                    <ul>
+                        <li><a href='#'>아이디 찾기</a></li>
+                        <li style={{paddingLeft:'5px',paddingRight:'5px'}}><a href='#'>비밀번호 찾기</a></li>
+                        <li><a href='#'>회원가입</a></li>
+                        
+                    </ul>
+                </nav>            
+            </div>
+          </div>
+
+        </div>
+
+        {/* "여기도 영역임"을 divmcover 내부에서 divm-wrapper 아래로 배치 */}
+        <div className='extra-sectionn'>
+          <div style={{textAlign:'center'}}>sns계정으로 로그인<br/>{message}</div>
+          <button className='mainbaroo2' 
+            style={{backgroundColor:'green', color:'white'}}
+            
+           >Naver</button>      
+          <button className='mainbaroo2' 
+          style={{backgroundColor:'Yellow'}}>kakao</button>
+          <button className='mainbaroo2' 
+          style={{backgroundColor:'grey', color:'white'}}>Google</button>
+        </div>
+        </div>
+
+      </div>
+</div>
   )
 }

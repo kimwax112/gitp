@@ -1,0 +1,88 @@
+
+
+
+ul, li {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .copylight {
+    font-weight: 200;
+  }
+
+  .divmcover{
+    display: flex;
+    flex-direction: column; /* 내부 요소들을 세로 정렬 */
+    align-items: center;
+   background-color: #FAFAFB;
+
+    
+    height:100vh;
+    
+  }
+  .divm{
+    margin:10px;
+    border-radius: 25px;
+    padding: 2.5em;
+    box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 0.7);
+    display: inline;
+    align-items: center;
+    text-align: center;
+
+    /*justify-content:space-around;*/
+    background-color: #799FC4;
+    width: 200px;
+    height: 300px;
+  }
+  .divm2{
+    display: block;
+
+  }
+  .mainbaro{
+    border-radius: 50px;
+    color:#fff;
+    background-color: #4A6171;
+    border:none;
+    padding: 10px 30px;
+    margin-top:40px;
+  }
+  .mainbaro2{
+    border-radius: 10px;
+    color:#5C5C5C;
+    background-color: #9DBBD5;
+    border:none;
+    padding: 10px 30px;
+    margin-top:40px;
+    margin:20px;
+    width:200px;
+    height: 55px;
+    font-size: 18px;
+    box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 0.7);
+
+  }
+  .mainbaro2:hover{
+        background-color:black;
+
+  }
+
+
+
+  
+  .divm-wrapper {
+    margin-top:100px;
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.extra-section {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    margin:50px;
+}
+.MainLogo{
+    background-color: #FAFAFB;
+    text-align: center;
+}

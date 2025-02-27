@@ -1,0 +1,62 @@
+.clothes-container {
+    height: 1500px; /* 원하는 높이 설정 */
+  }
+
+.SearchandResult {
+    width: 1200px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+}
+/*.Info{
+    display: flex;
+    justify-content: center; 
+
+    height:auto;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.InfoText{
+    width:1400px;
+    font-size:50px;
+}
+*/
+
+.ActiveInfo1 {
+    bottom: 0; /* 화면 맨 아래 */
+    left: 0; /* 화면 왼쪽 끝 */
+    width: 100%; /* 전체 너비로 설정 */
+    background-color: #fff; /* 배경 색상 설정 (선택 사항) */
+    padding: 20px; /* 내용에 여백 추가 (선택 사항) */
+    text-align: center; /* 내용 중앙 정렬 (선택 사항) */
+  }
+  
+.ContentSell {
+    width: 250px; /* width 값을 한 번만 설정 */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px; /* 모서리 둥글게 */
+    margin: 15px;
+}
+
+.Content3 {
+    display: flex; /* 수평 배치 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    align-items: flex-start; /* 상단 정렬 */
+    gap: 20px; /* 컴포넌트 간 간격 */
+}
+
+.SideMenu {
+    width: 250px; /* 원하는 너비 설정 */
+    margin-top: -20px !important; /* 위로 올리기 */
+}
+
+.SearchandResult {
+    width: calc(100% - 250px); /* 전체 너비에서 SideMenu 너비만큼 빼기 */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+}

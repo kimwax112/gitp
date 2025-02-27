@@ -1,0 +1,39 @@
+.login{
+    text-align:center;
+}
+.input-text{
+    width:100%;
+    border-width: 0 0 1px;
+
+}
+.input-password{
+    width:100%;
+    border-width: 0 0 1px;
+
+}
+.input-email{
+    width:100%;
+    border-width: 0 0 1px;
+
+}
+.inputinfo{
+    text-align: left;
+    font-size: 14px;
+    color:#696565;
+    margin: 20px;
+}
+.divmmmm{
+    padding: 30px;
+    width: 414.906px;
+    height: 496px;
+  }
+  .mpbutton{
+    width:375px;
+    height:52px;
+    background-color: #BFD7EE;
+    border-style: none;
+    color: white;
+    font-size:20px;
+    
+
+  }

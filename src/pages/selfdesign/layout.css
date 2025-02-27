@@ -1,0 +1,26 @@
+.layout {
+    display: flex;
+    align-items: stretch;
+    height: 100vh; /* 부모 요소에 세로 크기 지정 */
+  }
+  
+  .sidebar {
+    width: 250px; 
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;  /* 사이드바와 본문 사이 여백 */
+    margin-bottom: 3px;
+  }
+  
+  .content {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 100%; /* 부모의 height를 따르게 함 */
+  }

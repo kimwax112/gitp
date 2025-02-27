@@ -1,0 +1,28 @@
+
+
+  .sidebar {
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    height: 1100px;
+  }
+
+  .sidebar h3 {
+    font-size: 15px;
+    white-space: nowrap; /* 줄바꿈 방지 */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+    font-weight: 200; /* 기본보다 얇게 */
+    font-size: 13px;
+  }
+  
+  .sidebar .active {
+    font-weight: bold;
+  }
