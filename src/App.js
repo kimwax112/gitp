@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <Navbar />
+        {/*<Header />
+        <Navbar />*/}
         <RouterComponent /> {/* 라우팅 담당 컴포넌트 */}
-        <Footer />
+        {/*<Footer />*/}
       </Router>
     </div>
   );

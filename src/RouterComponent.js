@@ -2,6 +2,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Mainp, CosMain, BrandDP, Clothes, Fabric, Size, Upload, FinalConfimation } from "./pages";
 import Home from "./pages/Home";
+import Chat from "./components/FolderForTest/Chat";
+import ChatRoom from "./components/FolderForTest/ChatRoom";
+
 
 
 const RouterComponent = () => {
@@ -16,6 +19,8 @@ const RouterComponent = () => {
       <Route path="/Upload" element={<Upload />} />
       <Route path="/FinalConfirmation" element={<FinalConfimation />} />
       <Route path="/Home" element={<Home />} />
+      <Route path="/test" element={<Chat/>}/>
+      <Route path="/test2" element={<ChatRoom/>}/>
     </Routes>
   );
 };
